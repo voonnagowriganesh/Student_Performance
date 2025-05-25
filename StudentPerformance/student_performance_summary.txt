@@ -1,0 +1,36 @@
+
+Student Performance Prediction - Project Summary
+
+Objective:
+To build a machine learning model that predicts whether a student will pass or fail based on various demographic, social, and academic factors.
+
+Dataset Description:
+The dataset contains information about students’ personal characteristics (such as age, sex, family background), school-related features (such as study time, failures), and previous grades (G1, G2, G3). The final grade (G3) is used to define if a student passes (grade >= 10) or fails.
+
+Key Steps in the Project:
+
+1. Data Collection:
+   The student performance data was collected from a Portuguese secondary school dataset containing several attributes like school, sex, age, address, parents’ education, study habits, and previous grades.
+
+2. Data Preprocessing:
+   - The final grade (G3) was converted into a binary variable indicating pass or fail (pass if G3 >= 10).
+   - Columns G1, G2, and G3 were removed from the features to avoid data leakage since they directly represent student grades.
+   - Categorical variables were transformed into numerical features using one-hot encoding to make them compatible with the machine learning algorithm.
+
+3. Feature Selection:
+   After encoding, all remaining attributes were used as input features. These include demographic data, study habits, family support, and health status.
+
+4. Model Building:
+   Logistic Regression was chosen as the classification model because it works well for binary classification problems like pass/fail prediction.
+
+5. Model Training and Testing:
+   The dataset was split into training and testing subsets to train the model and evaluate its performance on unseen data.
+
+6. Model Evaluation:
+   The accuracy score was calculated to measure how well the model predicts the student’s pass or fail status.
+
+7. Model Saving:
+   The trained model was saved for future use in predictions without needing to retrain.
+
+Conclusion:
+This project demonstrates how machine learning can help predict student success by analyzing diverse factors beyond just test scores. Such a model can assist educators in identifying students who might need additional support to improve their academic performance.
